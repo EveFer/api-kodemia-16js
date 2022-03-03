@@ -27,7 +27,11 @@ const koderSchema = new mongoose.Schema({
         trim: true,
         enum: ['f', 'm'] // estos valores son validos
     }
+}, {
+    timestamps: true
 })
+// createAt 38487498
+// updateAt 34234234
 
 const model = mongoose.model('koders', koderSchema)
 

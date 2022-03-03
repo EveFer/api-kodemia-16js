@@ -27,3 +27,19 @@ dbConnect()
 // PATCH /Koders/:id
 // DELETE /koders/:id
 // GET /koders/:id
+
+
+
+// 
+
+// Authentication
+
+
+
+// Authorization
+
+
+// bcryot
+// jwt
+
+// Flujo de registro y loggeo

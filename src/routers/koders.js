@@ -50,6 +50,6 @@ router.post('/', async (request, response) => {
 module.exports = router
 
 // 
-// PATCH /koders/:id
-// DELETE /koders/:id
-// GET /koders/:id
+// PATCH /koders/:id paco
+// DELETE /koders/:id hugo
+// GET /koders/:id jess
