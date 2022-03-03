@@ -7,8 +7,11 @@ function getAll() {
 }
 
 function create(dataKoder) {
-    return Koder.create(dataKoder)
+    // crear un koder en la BD
+    const {name, lastName, age, gender} = dataKoder 
+    return Koder.create({name, lastName, age, gender}) //
 }
+
 
 module.exports = {
     getAll,

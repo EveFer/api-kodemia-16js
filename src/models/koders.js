@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const {Schema} = mongoose
 
 const koderSchema = new mongoose.Schema({
     name: {

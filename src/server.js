@@ -8,7 +8,7 @@ const server = express()
 
 
 // middlewares
-
+server.use(express.json())
 
 // routers
 server.use('/koders', kodersRouter)
