@@ -43,3 +43,15 @@ dbConnect()
 // jwt
 
 // Flujo de registro y loggeo
+
+
+
+// POST /users/login
+// body: {email, password}
+
+// response: token
+
+// model users
+// crear caso de uso
+// endpoint
+// validar que este montado

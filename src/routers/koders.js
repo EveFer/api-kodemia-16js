@@ -1,7 +1,11 @@
 const express = require('express')
 const useCasesKoders = require('../useCases/koders')
 
+const auth = require('../middlewares/auth')
+
 const router = express.Router()
+
+router.use(auth)
 
 router.get('/', async (request, response) => {
     try {

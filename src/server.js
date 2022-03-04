@@ -3,6 +3,7 @@
 // montar los routers
 const express = require('express')
 const kodersRouter = require('./routers/koders')
+const usersRouter = require('./routers/users')
 
 const server = express()
 
@@ -12,6 +13,7 @@ server.use(express.json())
 
 // routers
 server.use('/koders', kodersRouter)
+server.use('/users', usersRouter)
 
 
 
