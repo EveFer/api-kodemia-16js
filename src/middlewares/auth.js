@@ -7,9 +7,11 @@ function auth(request, response, next) {
 
         const isValidToken = jwt.verify(token)
 
+        
         console.log('isValidToken: ', isValidToken)
-
+        
         if(!isValidToken) throw new Error('Not authorized D:')
+        request.userCurrent = isValidToken.id
         next()
     } catch (error) {
         response.status(401)
@@ -20,4 +22,6 @@ function auth(request, response, next) {
         })
     }
 }
+
 module.exports = auth
+

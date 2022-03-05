@@ -9,8 +9,8 @@ router.use(auth)
 
 router.get('/', async (request, response) => {
     try {
+        const {userCurrent} = request
         const allKoders = await useCasesKoders.getAll()
-
         response.json({
             success: true,
             message: 'All koders',
